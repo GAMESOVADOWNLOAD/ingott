@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Watch Anime</title>
+</head>
+<body>  
+        <div class="Background">  
+             <div class = "Letter-Container">
+                <div class="Letter-Outside">
+                    <div class ="square">
+                    </div>
+                    <div class = "note">
+                        <div class = "note-container">
+                            <div class="header">
+                                Dear ingot lianne,
+                            </div>
+                            <div class="message-container">
+                                <div class="message">
+                                    <p>
+                                        Hunters, humans who possess magical abilities, 
+                                        must battle deadly monsters to protect the human race from certain annihilation.
+                                        A notoriously weak hunter named Sung Jinwoo finds himself in a seemingly endless struggle for survival. 
+                                        One day, after narrowly surviving an overwhelmingly powerful double dungeon that nearly wipes out his entire party, 
+                                        a mysterious program called the System chooses him as its sole player and in turn, gives him the extremely rare ability to level up in strength, possibly beyond any known limits. 
+                                        Jinwoo sets on a journey as he fights against all kinds of enemies, both man and monster, to discover the secrets of the dungeons and the true source of his powers..
+                                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="upper-triangle">
+                    </div>
+                    <div class ="lower-triangle flap">
+                    </div>
+                    
+                      <div class = "heart">
+                    </div>
+                </div>
+                <div class = "heart1"></div>
+                <div class = "heart2"></div>
+                <div class = "heart3"></div>
+             </div>
+        </div>
+            
+            
+ 
+<script>
+    const letter = document.querySelector('.heart');
+    const upperTriangle = document.querySelector('.upper-triangle')
+    const lowerLetterContainer = document.querySelector('.Letter-Outside')
+    const note = document.querySelector('.note');
+    const heart1 = document.querySelector('.heart1');
+    const heart2 = document.querySelector('.heart2');
+    const heart3 = document.querySelector('.heart3');
+
+    letter.addEventListener('click',()=>{
+        lowerLetterContainer.style.transform = 'rotate(-30deg)';
+        lowerLetterContainer.style.transition = 'all 0.4s ease-in-out 0.5s';
+        lowerLetterContainer.style.transform = 'rotate(360deg)';
+        
+        upperTriangle.style.transformOrigin = '0 0';
+        upperTriangle.style.transform= 'rotateX(180deg)';
+
+        note.style.transformOrigin = 'bottom center 0';
+        note.style.opacity='1';
+        note.style.transform= 'scale(1.15,1.87)';
+
+        upperTriangle.style.opacity = "0.8";
+        upperTriangle.style.visibility ="hidden";
+
+        heart1.style.opacity ="1";
+        heart2.style.opacity ="1";
+        heart3.style.opacity ="1";
+    })
+</script>
+</body>
+</html>
